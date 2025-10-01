@@ -279,7 +279,7 @@ body {
 .footer {
     background-color: var(--primary-color);
     color: var(--secondary-red);
-    padding: 60px 0 20px;
+    padding: 30px 0 20px;
 }
 
 .footer-content {
@@ -299,6 +299,7 @@ body {
 .footer-section ul {
     color: black;
     line-height: 1.8;
+    width: 350px;
 }
 
 .footer-section ul {
@@ -430,8 +431,6 @@ body {
     body.menu-open {
         overflow: hidden;
     }
-
-
     .hero-small {
         height: 250px;
     }
