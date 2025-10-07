@@ -135,7 +135,7 @@ body {
     padding: 12px 12px;
     text-decoration: none;
     border-radius: 5px;
-    font-weight: 600;
+    font-weight: 500;
     transition: all 0.3s ease;
     border: 2px solid transparent;
     cursor: pointer;
@@ -493,20 +493,39 @@ body {
         position: fixed;
         top: 0;
         right: -100%;
-        height: 100vh;
+        height: 45vh;
         width: 70%;
         max-width: 280px;
-        background-color: var(--secondary-white);
+        background-color: var(--primary-color);
         flex-direction: column;
         align-items: start;
-        padding: 80px 20px;
-        gap: 1.5rem;
+        padding: 40px 20px;
+        gap: 0.2rem;
         transition: right 0.4s ease-in-out;
         box-shadow: -2px 0 10px rgba(0,0,0,0.2);
     }
 
     .nav-links.active {
         right: 0;
+    }
+    .nav-links li a {
+        width: 100%;
+    }
+
+    .nav-links li {
+        width: 100%;
+        border-bottom: 1px solid var(--secondary-white)
+    }
+
+    .nav-links li:last-child {
+        border-bottom: none; 
+    }
+
+    .nav-links a {
+        display: block;
+        width: 10%;
+        padding: 5px 5px; 
+        color: var(--secondary-white); 
     }
 
     .hamburger {
@@ -534,26 +553,56 @@ body {
     }
 
     .hero-content h1 {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
-
+    .hero-content a,
     .hero-content p {
-        font-size: 1rem;
+        font-size: 0.88rem;
+    }
+    .btn-primary {
+        padding: 5px 5px;
+
     }
 
     .intro-content {
         grid-template-columns: 1fr;
     }
+    .intro-text h2 {
+        font-size: 1rem;
+    }
+    .intro-text p {
+        font-size: 0.88rem;
+        text-align: justify;
+    }
 
     .intro-image {
-        order: -1;
+        order: 1;
     }
 
     .intro-text h2,
     .order-of-service h2,
     .sermons-preview h2,
     .gallery h2 {
-        font-size: 2rem;
+        font-size: 1.5rem;
+    }
+    .order-of-service li {
+        font-size: 0.88rem;
+    }
+    .order-of-service h2, 
+    .order-of-service h3 {
+        margin-bottom: 10px;
+    }
+    .service-icon {
+        font-size: 1.6rem;
+    }
+    .sermon-content h2 {
+        font-size: 1rem;
+    }
+    .sermon-content h3 {
+        font-size: 1rem;
+    }
+    .sermon-content p {
+        font-size: 0.85rem;
     }
 
     .service-schedule {
@@ -568,9 +617,18 @@ body {
         grid-template-columns: repeat(2, 1fr);
     }
 
+    .footer-content h3 {
+        font-size: 1rem;
+    }
+    .footer-bottom p,
+    .footer-content p,
+    .footer-content li {
+        font-size: 0.88rem;
+    }
+
     .footer-content {
         grid-template-columns: 1fr;
-        gap: 30px;
+        gap: 20px;
     }
 }
-}
+

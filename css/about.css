@@ -367,7 +367,7 @@ body {
     text-align: center;
     padding-top: 20px;
     border-top: 1px solid black;
-    color: var(--text-dark);
+    color: black;
 }
 
 .hamburger {
@@ -392,20 +392,39 @@ body {
         position: fixed;
         top: 0;
         right: -100%;
-        height: 100vh;
+        height: 45vh;
         width: 70%;
         max-width: 280px;
-        background-color: var(--secondary-white);
+        background-color: var(--primary-color);
         flex-direction: column;
         align-items: start;
-        padding: 80px 20px;
-        gap: 1.5rem;
+        padding: 40px 20px;
+        gap: 0.2rem;
         transition: right 0.4s ease-in-out;
         box-shadow: -2px 0 10px rgba(0,0,0,0.2);
     }
 
     .nav-links.active {
         right: 0;
+    }
+    .nav-links li a {
+        width: 100%;
+    }
+
+    .nav-links li {
+        width: 100%;
+        border-bottom: 1px solid var(--secondary-white)
+    }
+
+    .nav-links li:last-child {
+        border-bottom: none; 
+    }
+
+    .nav-links a {
+        display: block;
+        width: 10%;
+        padding: 5px 5px; 
+        color: var(--secondary-white); 
     }
 
     .hamburger {
@@ -436,35 +455,70 @@ body {
     }
 
     .hero-content h1 {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 
     .hero-content p {
-        font-size: 1rem;
+        font-size: 0.88rem;
+    }
+
+    .our-story h2 {
+        font-size: 1.6rem;
+        margin-bottom: 10px;
+    }
+    .our-story h3 {
+        font-size: 1rem ;
+        margin-bottom: 10px;
+    }
+    .our-story p {
+        font-size: 0.88rem;
     }
 
     .story-content {
         grid-template-columns: 1fr;
-        gap: 30px;
+        gap: 20px;
     }
 
     .team-grid {
         grid-template-columns: repeat(2, 1fr);
-        gap: 30px;
+        row-gap: 20px;
+        column-gap: 10px;
+    }
+
+    .pastoral-team h2,
+    .ministries h2 {
+        font-size: 1.5rem;
     }
 
     .member-image {
-        width: 150px;
-        height: 150px;
+        width: 140px;
+        height: 140px;
     }
 
     .ministries-grid {
         grid-template-columns: 1fr;
     }
+    .pastoral-team h3,
+    .pastoral-team p,
+    .ministries p,
+    .ministry-content p {
+        font-size: 0.88rem;
+    }
+    .ministry-content h3 {
+        font-size: 1rem;
+    }
 
     .footer-content {
         grid-template-columns: 1fr;
-        gap: 30px;
+        gap: 20px;
+    }
+    .footer-content h3 {
+        font-size: 1rem;
+    }
+    .footer-bottom p,
+    .footer-content p,
+    .footer-content li {
+        font-size: 0.88rem;
     }
 
     .social-links {
