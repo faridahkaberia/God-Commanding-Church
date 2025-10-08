@@ -69,23 +69,6 @@ body {
     color: var(--accent-yellow);
 }
 
-/* .mobile-menu-toggle {
-    display: none;
-    flex-direction: column;
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 5px;
-}
-
-.mobile-menu-toggle span {
-    width: 25px;
-    height: 3px;
-    background-color: var(--text-dark);
-    margin: 3px 0;
-    transition: 0.3s;
-} */
-
 /* Small Hero Section */
 .hero-small {
     position: relative;
