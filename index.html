@@ -92,37 +92,51 @@
         <div class="container">
             <h2>Watch Our Sermons</h2>
             <div class="sermon-grid">
-                <div class="sermon-card">
-                    <div class="sermon-image">
-                        <img src="https://images.unsplash.com/photo-1504052434569-70ad5836ab65?w=400&h=250&fit=crop" alt="Sermon 1">
+                <div class="sermon-card" data-video-id="xVSCCHUS6io">
+                    <div class="sermon-image-container">
+                        <img src="images/battleinfaith.png" alt="Battle in Faith" class="sermon-image">
+                        <div class="play-overlay">
+                            <div class="play-button">
+                                <div class="play-icon"></div>
+                            </div>
+                        </div>
                     </div>
                     <div class="sermon-content">
                         <h3>Battle in Faith</h3>
-                        <h2>Rev. Peter Thiong'o</h2>
-                        <p>An encouragement to fight life’s spiritual battles with faith, relying on God’s power to tear down strongholds..</p>
-                        <a href="https://www.youtube.com" target="_blank" class="btn btn-secondary">Watch Sermon</a>
+                        <h4 class="sermon-speaker">Sermon by: Rev. Peter Thiong'o</h4>
+                        <p>An encouragement to fight life's spiritual battles with faith, relying on God's power to tear down strongholds.</p>
                     </div>
                 </div>
-                <div class="sermon-card">
-                    <div class="sermon-image">
-                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=250&fit=crop" alt="Sermon 2">
+
+                <div class="sermon-card" data-video-id="jBTLHzuicHM">
+                    <div class="sermon-image-container">
+                        <img src="https://www.shutterstock.com/image-photo/david-bible-being-anointed-by-260nw-2600617963.jpg" alt="From Anointing to Destiny" class="sermon-image">
+                        <div class="play-overlay">
+                            <div class="play-button">
+                                <div class="play-icon"></div>
+                            </div>
+                        </div>
                     </div>
                     <div class="sermon-content">
-                        <h3>From Annointing to Destiny</h3>
-                        <h2>Pastor Andrew Mulei</h2>
-                        <p>A message on how God’s anointing empowers believers to walk boldly into their divine calling and ultimate destiny.</p>
-                        <a href="https://www.youtube.com" target="_blank" class="btn btn-secondary">Watch Sermon</a>
+                        <h3>From Anointing to Destiny</h3>
+                        <h4 class="sermon-speaker">Sermon by: Pastor Andrew Mulei</h4>
+                        <p>A message on how God's anointing empowers believers to walk boldly into their divine calling and ultimate destiny.</p>
                     </div>
                 </div>
-                <div class="sermon-card">
-                    <div class="sermon-image">
-                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=250&fit=crop" alt="Sermon 2">
+
+                <div class="sermon-card" data-video-id="ifZnOmSWj2c">
+                    <div class="sermon-image-container">
+                        <img src="https://images.squarespace-cdn.com/content/v1/5bb3e0e234c4e2dd29db7437/1551402973734-80124WY2H349MD69JN4X/Walking-Gods-Will-Wide.jpg" alt="Walking in the will of God" class="sermon-image">
+                        <div class="play-overlay">
+                            <div class="play-button">
+                                <div class="play-icon"></div>
+                            </div>
+                        </div>
                     </div>
                     <div class="sermon-content">
                         <h3>Walking in the will of God</h3>
-                        <h2>Pastor Godfrey Mwenda</h2>
-                        <p>A call to align our daily lives with God’s perfect will, finding direction, peace, and purpose in His guidance.</p>
-                        <a href="https://www.youtube.com" target="_blank" class="btn btn-secondary">Watch Sermon</a>
+                        <h4 class="sermon-speaker">Sermon by: Pastor Godfrey Mwenda</h4>
+                        <p>A call to align our daily lives with God's perfect will, finding direction, peace, and purpose in His guidance.</p>
                     </div>
                 </div>
             </div>
@@ -131,6 +145,16 @@
             </div>
         </div>
     </section>
+
+    <!-- Video Modal (Add this before closing body tag if not already there) -->
+    <div class="video-modal" id="videoModal">
+        <div class="modal-content">
+            <button class="close-modal" id="closeModal">&times;</button>
+            <div class="video-container">
+                <iframe id="videoPlayer" width="100%" height="100%" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
 
     <!-- Gallery Section -->
     <section class="gallery">

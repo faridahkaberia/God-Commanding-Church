@@ -1,148 +1,251 @@
-// Sample Sermon Data (Replace with your actual data or API)
+// Sermon Data
 const sermonsData = [
     {
         id: 1,
-        title: "Walking in Faith",
+        title: "Kukuwa Ndani ya Kristo",
         speaker: "Rev. Peter Thiong'o",
-        date: "2025-01-05",
-        image: "https://images.unsplash.com/photo-1504052434569-70ad5836ab65?w=400&h=250&fit=crop",
-        videoId: "dQw4w9WgXcQ" // YouTube video ID
+        date: "2025-10-12",
+        image: "https://godwithy.wordpress.com/wp-content/uploads/2018/08/010-e4b8bbe880b6e7a8a3e5a48de6b4bbe698bee78eb0e59091e5bdbce5be97e997aee8af9d-e789b9e58699-zb-20180615.jpg",
+        videoId: "UU7jNtS_x6M" // YouTube video ID
     },
     {
         id: 2,
-        title: "The Power of Prayer",
-        speaker: "Pastor Florence Thiong'o",
-        date: "2024-12-29",
-        image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=250&fit=crop",
-        videoId: "dQw4w9WgXcQ"
+        title: "Battle in Faith",
+        speaker: "Rev. Peter Thiong'o",
+        date: "2025-09-21",
+        image: "images/battleinfaith.png",
+        videoId: "xVSCCHUS6io"
     },
     {
         id: 3,
-        title: "God's Unfailing Love",
-        speaker: "Pastor Kamau",
-        date: "2024-12-22",
-        image: "https://images.unsplash.com/photo-1519834785169-98be25ec3f84?w=400&h=250&fit=crop",
-        videoId: "dQw4w9WgXcQ"
+        title: "From Annointing to Destiny",
+        speaker: "Pastor Andrew Mulei",
+        date: "2025-09-20",
+        image: "https://www.shutterstock.com/image-photo/david-bible-being-anointed-by-260nw-2600617963.jpg",
+        videoId: "jBTLHzuicHM"
     },
     {
         id: 4,
-        title: "Living a Holy Life",
-        speaker: "Rev. Peter Thiong'o",
-        date: "2024-12-15",
-        image: "https://images.unsplash.com/photo-1438232992991-995b7058bbb3?w=400&h=250&fit=crop",
-        videoId: "dQw4w9WgXcQ"
+        title: "Walking in the Will of God",
+        speaker: "Pastor Godfrey Mwenda",
+        date: "2025-08-25",
+        image: "https://images.squarespace-cdn.com/content/v1/5bb3e0e234c4e2dd29db7437/1551402973734-80124WY2H349MD69JN4X/Walking-Gods-Will-Wide.jpg",
+        videoId: "ifZnOmSWj2c"
     },
     {
-        id: 5,
-        title: "The Grace of God",
-        speaker: "Pastor Dominic",
-        date: "2024-12-08",
-        image: "https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?w=400&h=250&fit=crop",
-        videoId: "dQw4w9WgXcQ"
+       id: 5,
+        title: "Seeking God in Helpless Times",
+        speaker: "Pastor Andrew Mulei",
+        date: "2025-08-24",
+        image: "https://img.freepik.com/premium-photo/christian-woman-hand-holy-bible-are-pray-worship-thank-god-church-with-black-background-concept-faith-spirituality-religion_2379-2617.jpg",
+        videoId: "5ko3mo9_gMg" 
     },
     {
         id: 6,
-        title: "Building Strong Families",
-        speaker: "Pastor Florence Thiong'o",
-        date: "2024-12-01",
-        image: "https://images.unsplash.com/photo-1511632765486-a01980e01a18?w=400&h=250&fit=crop",
-        videoId: "dQw4w9WgXcQ"
+        title: "Kujiandaa kwa Sababu ya Kazi ya Mungu",
+        speaker: "Rev. Peter Thiong'o",
+        date: "2025-08-23",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAolGTfnuSGD12Oya6-7w6SvE5QiuvR6gssAmllTv0nISxCz5XocaBjT4eO6VZ0H7ECvs&usqp=CAU",
+        videoId: "if0UlRq6OQI"
+        
     },
     {
         id: 7,
-        title: "Trusting God in Trials",
-        speaker: "Rev. Peter Thiong'o",
-        date: "2024-11-24",
-        image: "https://images.unsplash.com/photo-1478147427282-58a87a120781?w=400&h=250&fit=crop",
-        videoId: "dQw4w9WgXcQ"
+        title: "The Love of God",
+        speaker: "Pastor Godfrey Mwenda",
+        date: "2025-08-22",
+        image: "https://blogs.blueletterbible.org/blb/wp-content/uploads/sites/2/2015/08/20150821_love.jpg",
+        videoId: "AXwyjTkUINg"
+        
     },
     {
         id: 8,
-        title: "The Fruit of the Spirit",
-        speaker: "Pastor Kamau",
-        date: "2024-11-17",
-        image: "https://images.unsplash.com/photo-1504052434569-70ad5836ab65?w=400&h=250&fit=crop",
-        videoId: "dQw4w9WgXcQ"
+        title: "Bwana Aliondoa Aibu Yetu",
+        speaker: "Rev. Peter Thiong'o",
+        date: "2025-08-21",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVzDgAhYVeAUIQ_i6tGXsFAcYX7Qb0fgy_Lw&s",
+        videoId: "ktE_6U0vqOI"
+        
     },
     {
         id: 9,
-        title: "Forgiveness and Mercy",
-        speaker: "Pastor Dominic",
-        date: "2024-11-10",
-        image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=250&fit=crop",
-        videoId: "dQw4w9WgXcQ"
+        title: "The Rich and God's Kingdom",
+        speaker: "Rev. Peter Thiong'o",
+        date: "2025-08-20",
+        image: "https://i.ytimg.com/vi/jZFhi8NukfM/maxresdefault.jpg",
+        videoId: "f_wwCrE0Eps"
+        
     },
     {
         id: 10,
-        title: "The Great Commission",
+        title: "Kuishi Maisha ya Utajiri Kuna Kilio",
         speaker: "Rev. Peter Thiong'o",
-        date: "2024-11-03",
-        image: "https://images.unsplash.com/photo-1519834785169-98be25ec3f84?w=400&h=250&fit=crop",
-        videoId: "dQw4w9WgXcQ"
+        date: "2025-08-19",
+        image: "https://media.istockphoto.com/id/513124660/photo/businessman-looking-at-the-city.jpg?s=612x612&w=0&k=20&c=-HfLBmpJkWwrWysamaSAgGKZwik-BDPUfe4Pn2T62oM=",
+        videoId: "wRz1ux73MHo"
+        
     },
     {
         id: 11,
-        title: "Living in the Spirit",
-        speaker: "Pastor Florence Thiong'o",
-        date: "2024-10-27",
-        image: "https://images.unsplash.com/photo-1438232992991-995b7058bbb3?w=400&h=250&fit=crop",
-        videoId: "dQw4w9WgXcQ"
+        title: "Upumziko Katika Kumtii Mungu",
+        speaker: "Rev. Peter Thiong'o",
+        date: "2025-08-10",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRz3rdV4VWqJb8FZbM49uSh3u3hT8VP7IGkTw&s",
+        videoId: "re2MXPu2KDM"
+        
     },
     {
         id: 12,
-        title: "Hope in Christ",
-        speaker: "Pastor Kamau",
-        date: "2024-10-20",
-        image: "https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?w=400&h=250&fit=crop",
-        videoId: "dQw4w9WgXcQ"
+        title: "Part II: Roho ya Maangamizi",
+        speaker: "Rev. Peter Thiong'o",
+        date: "2025-07-05",
+        image: "https://i.ytimg.com/vi/IdcgVVgG2uQ/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAoGhBLMLVf3NvqczekMNy-1JZGwgp",
+        videoId: "QBTwob5LHjA"
+        
     },
     {
         id: 13,
-        title: "The Word of God",
+        title: "Part II: Kutunza Madhabahu",
         speaker: "Rev. Peter Thiong'o",
-        date: "2024-10-13",
-        image: "https://images.unsplash.com/photo-1511632765486-a01980e01a18?w=400&h=250&fit=crop",
-        videoId: "dQw4w9WgXcQ"
+        date: "2025-07-02",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwwRX1yX2aZchf5xLwlF_M7Ac_UWLTcDULIwqY_N0vbxwZkg06tByTHitTq91OUH13qKc&usqp=CAU",
+        videoId: "31rNi7-whx0"
     },
     {
         id: 14,
-        title: "Faith in Action",
-        speaker: "Pastor Dominic",
-        date: "2024-10-06",
-        image: "https://images.unsplash.com/photo-1478147427282-58a87a120781?w=400&h=250&fit=crop",
-        videoId: "dQw4w9WgXcQ"
+        title: "Part I: Roho ya Maangamizi",
+        speaker: "Rev. Peter Thiong'o",
+        date: "2025-06-26",
+        image: "https://i.ytimg.com/vi/IdcgVVgG2uQ/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAoGhBLMLVf3NvqczekMNy-1JZGwg",
+        videoId: "IdcgVVgG2uQ"
     },
     {
         id: 15,
-        title: "The Joy of Salvation",
-        speaker: "Pastor Florence Thiong'o",
-        date: "2024-09-29",
-        image: "https://images.unsplash.com/photo-1504052434569-70ad5836ab65?w=400&h=250&fit=crop",
-        videoId: "dQw4w9WgXcQ"
+        title: "Kazi ya Damu ya Yesu",
+        speaker: "Rev. Peter Thiong'oa",
+        date: "2025-06-23",
+        image: "https://faithworks.life/wp-content/uploads/2023/01/the-precious-blood-of-christ-1280x720-1-1140x641-1.jpeg",
+        videoId: "aB2dnKq-ick"
     },
     {
         id: 16,
-        title: "Walking in Victory",
+        title: "Part I: Kutunza Madhabahu",
         speaker: "Rev. Peter Thiong'o",
-        date: "2024-09-22",
-        image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=250&fit=crop",
-        videoId: "dQw4w9WgXcQ"
+        date: "2025-06-18",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwwRX1yX2aZchf5xLwlF_M7Ac_UWLTcDULIwqY_N0vbxwZkg06tByTHitTq91OUH13qKc&usqp=CAU",
+        videoId: "X2aXUzWRoH8"
     },
     {
         id: 17,
-        title: "The Love of Christ",
-        speaker: "Pastor Kamau",
-        date: "2024-09-15",
-        image: "https://images.unsplash.com/photo-1519834785169-98be25ec3f84?w=400&h=250&fit=crop",
-        videoId: "dQw4w9WgXcQ"
+        title: "The Power of Light",
+        speaker: "Pastor Godfrey Mwenda",
+        date: "2025-06-17",
+        image: "https://watermarkwaves.com/cdn/shop/articles/0d9374257c81e8a3d6d1f98cbdbcbdf8.webp?v=1731873321&width=1792",
+        videoId: "xhGWzEPjagI"
     },
     {
         id: 18,
-        title: "Standing Firm in Faith",
-        speaker: "Pastor Dominic",
-        date: "2024-09-08",
+        title: "Uwezo wa Mungu Unalipa",
+        speaker: "Rev. Peter Thiong'o",
+        date: "2025-06-14",
+        image: "https://images.unsplash.com/photo-1519834785169-98be25ec3f84?w=400&h=250&fit=crop",
+        videoId: "BVD2_YkbsmMQ"
+    },
+    {
+        id: 19,
+        title: "Mtumaini Christo, Usikate Tamaa",
+        speaker: "Rev. Peter Thiong'o",
+        date: "2025-10-27",
         image: "https://images.unsplash.com/photo-1438232992991-995b7058bbb3?w=400&h=250&fit=crop",
-        videoId: "dQw4w9WgXcQ"
+        videoId: "X8FMB5vwQAE"
+    },
+    {
+        id: 20,
+        title: "Finding Rest in a Restless World",
+        speaker: "Rev. Peter Thiong'o",
+        date: "2025-04-16",
+        image: "https://cpmfiles1.com/gracecommunity.org/rest-2016.jpg",
+        videoId: "Tmc2080rEEQ"
+    },
+    {
+        id: 21,
+        title: "Trust God and Have Faith in Him",
+        speaker: "Pastor Florence Thiong'o",
+        date: "2024-10-02",
+        image: "https://jenschreiner.com/wp-content/uploads/2024/03/Woman-on-pier-with-arms-strecthed-out-having-faith-in-God.png",
+        videoId: "J5TatwKd4iU"
+    },
+    {
+        id: 22,
+        title: "The Promise of the House of the Lord",
+        speaker: "Rev. Peter Thiong'o",
+        date: "2024-08-19",
+        image: "https://images.unsplash.com/photo-1478147427282-58a87a120781?w=400&h=250&fit=crop",
+        videoId: "UfBSJQPDAoQ"
+    },
+    {
+        id: 23,
+        title: "Productive Work",
+        speaker: "Rev. Peter Thiong'o",
+        date: "2024-08-06",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFxK_xcqZW_4tfmZme8VOdp8JvxCtCUGNw9Ckaki4eM4vW8ui2GA9WcMmSzfswR-t_JVw&usqp=CAU",
+        videoId: "it8a2BIjgP0"
+    },
+    {
+        id: 24,
+        title: "Overcoming Through Testimonies",
+        speaker: "Rev. Peter Thiong'o",
+        date: "2024-08-01",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTn0LhB3q12SSDmzjtEmWnEdFoIsZ41HWDxh_Ik3Mp4si_6DVpMqKRY3K45hmvrmlK9yl4&usqp=CAU",
+        videoId: "ZyYcw2q31Gc"
+    },
+    {
+        id: 25,
+        title: "The Parable of the Sower",
+        speaker: "Rev. Peter Thiong'o",
+        date: "2024-07-08",
+        image: "https://media.freebibleimages.org/stories/FB_GNPI_049_Parable_Sower/source-jpeg/04_FB_GNPI_049_Parable_Sower_1024.jpg?1613321713",
+        videoId: "z_bn2NQWJYA"
+    },
+    {
+        id: 26,
+        title: "Why is there such a great difference at the Lord’s table?",
+        speaker: "Rev. Peter Thiong'o",
+        date: "2023-02-06",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpy8vGkvtcu_Rw-49_kuZo5QYg5axy_iAJPfeCq9SXC5YD-g1NMF1UsBsOi_PHlkETIq8&usqp=CAU",
+        videoId: "1emaLOnfl_I"
+    },
+    {
+        id: 27,
+        title: "Kuvunja Madhabahu za Kwenu",
+        speaker: "Rev. Peter Thiong'o",
+        date: "2022-12-05",
+        image: "https://i.ytimg.com/vi/RAFhcHn_LYs/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDt60kuC-JUAJT_l7f8WIi_LmMldw",
+        videoId: "k28Ff5T9mjM"
+    },
+    {
+        id: 28,
+        title: "Living for God Today",
+        speaker: "Pastor Andrew Mulei",
+        date: "2022-11-17",
+        image: "https://larrydelacruz.wordpress.com/wp-content/uploads/2012/05/living-for-god1.jpg",
+        videoId: "ol0LOSC-68s"
+    },
+    {
+        id: 29,
+        title: "Israel Return to Christ",
+        speaker: "Pastor Andrew Mulei",
+        date: "2022-10-13",
+        image: "https://christinprophecyblog.org/wp-content/uploads/2023/12/Lords-Second-Coming-730x414.jpg",
+        videoId: "wr7QSL99FF8"
+    },
+    {
+        id: 30,
+        title: "Licence to New Jerusalem",
+        speaker: "Pastor Andrew Mulei",
+        date: "2022-09-10",
+        image: "https://i.pinimg.com/736x/74/66/37/7466374825ce76efda97696cdc2b870e.jpg",
+        videoId: "VyxdWNfXopw"
     }
 ];
 
@@ -320,8 +423,8 @@ function applyFilters() {
         const speakerMap = {
             'rev-peter': 'Rev. Peter Thiong\'o',
             'pastor-florence': 'Pastor Florence Thiong\'o',
-            'pastor-kamau': 'Pastor Kamau',
-            'pastor-dominic': 'Pastor Dominic'
+            'pastor-godfrey': 'Pastor Godfrey Mwenda',
+            'pastor-andrew': 'Pastor Andrew Mulei'
         };
         filteredSermons = filteredSermons.filter(sermon => 
             sermon.speaker === speakerMap[speaker]

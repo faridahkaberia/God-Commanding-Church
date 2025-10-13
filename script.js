@@ -108,6 +108,64 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+// Setup video functionality for index page sermons
+document.addEventListener('DOMContentLoaded', () => {
+    setupIndexSermons();
+});
+
+function setupIndexSermons() {
+    const sermonCards = document.querySelectorAll('.sermons-preview .sermon-card');
+    const modal = document.getElementById('videoModal');
+    const closeBtn = document.getElementById('closeModal');
+    const videoPlayer = document.getElementById('videoPlayer');
+
+    if (!modal) return; // Exit if modal doesn't exist
+
+    // Add click handlers to sermon cards
+    sermonCards.forEach(card => {
+        card.addEventListener('click', function(e) {
+            // Prevent link clicks from triggering
+            if (e.target.tagName === 'A') return;
+            
+            const videoId = this.getAttribute('data-video-id');
+            if (videoId) {
+                openVideo(videoId);
+            }
+        });
+    });
+
+    // Close modal button
+    if (closeBtn) {
+        closeBtn.addEventListener('click', closeVideo);
+    }
+
+    // Close modal when clicking outside
+    modal.addEventListener('click', (e) => {
+        if (e.target === modal) {
+            closeVideo();
+        }
+    });
+
+    // Close modal with Escape key
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && modal.classList.contains('active')) {
+            closeVideo();
+        }
+    });
+
+    function openVideo(videoId) {
+        videoPlayer.src = `https://www.youtube.com/embed/${videoId}?autoplay=1`;
+        modal.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    }
+
+    function closeVideo() {
+        videoPlayer.src = '';
+        modal.classList.remove('active');
+        document.body.style.overflow = '';
+    }
+}
+
 // // Form Validation (for Contact and Giving pages)
 // function validateForm(formId) {
 //     const form = document.getElementById(formId);
