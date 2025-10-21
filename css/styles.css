@@ -72,7 +72,7 @@ body {
 /* Hero Section */
 .hero {
     position: relative;
-    height: 400px;
+    height: 350px;
     background-image: url('https://images.unsplash.com/photo-1438232992991-995b7058bbb3?w=1200&h=600&fit=crop');
     background-size: cover;
     background-position: center;
@@ -218,7 +218,7 @@ body {
 
 .service-card {
     background-color: var(--secondary-white);
-    padding: 30px;
+    padding: 20px;
     border-radius: 10px;
     box-shadow: 0 3px 10px rgba(0,0,0,0.1);
     border-top: 4px solid var(--primary-color);
@@ -226,13 +226,12 @@ body {
 
 .service-icon {
     font-size: 2rem;
-    margin-bottom: 1rem;
 }
 
 .service-card h3 {
     font-size: 1.4rem;
     color: var(--secondary-red);
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
 }
 
 .service-card ul {
@@ -242,7 +241,7 @@ body {
 .service-card li {
     padding: 10px 0;
     color: var(--text-light);
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid #ccc3c3;
 }
 
 .service-card li:last-child {
