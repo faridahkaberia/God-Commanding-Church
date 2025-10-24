@@ -156,7 +156,7 @@ body {
     display: flex;
     gap: 5px;
     margin-bottom: 0.5rem;
-    padding: 20px;
+    padding: 15px;
     background-color:var(--primary-color);
     border-radius: 50px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
@@ -164,12 +164,12 @@ body {
 
 .info-icon {
     font-size: 1.5rem;
-    min-width: 50px;
+    min-width: 40px;
 }
 
 .info-content h3 {
     color: var(--secondary-red);
-    margin-bottom: 0.8rem;
+    margin-bottom: 0.5rem;
     font-size: 1.2rem;
 }
 
@@ -554,9 +554,15 @@ body {
         width: 400px;
     }
 
+    .info-icon {
+    font-size: 1rem;
+    min-width: 20px;
+    }
+
     .contact-form-container {
         padding: 20px;
-        margin: 0 10px;
+        margin: 0 8px;
+        max-width: 400px;
     }
     
     .contact-form-container h2 {
