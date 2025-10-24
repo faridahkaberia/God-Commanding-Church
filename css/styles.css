@@ -44,11 +44,10 @@ body {
     padding: 1rem 0;
 }
 
-.logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: var(--accent-yellow);
-    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+.logo img {
+    height: 50px;
+    width: auto;
+    display: block;
 }
 
 .nav-links {
@@ -73,7 +72,7 @@ body {
 .hero {
     position: relative;
     height: 350px;
-    background-image: url('https://images.unsplash.com/photo-1438232992991-995b7058bbb3?w=1200&h=600&fit=crop');
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBzPfamm_8VMKWt-A2EuJ6WjHpZ2RvLf4ixw&s');
     background-size: cover;
     background-position: center;
     display: flex;
@@ -128,16 +127,16 @@ body {
 }
 
 .btn-primary {
-    background-color: var(--secondary-red);
+    background-color: var(--primary-color);
     color: var(--secondary-white);
-    border-color: var(--secondary-red);
+    border-color: var(--primary-color);
 }
 
 .btn-primary:hover {
-    background-color: var(--primary-color);
+    background-color: var(--accent-yellow);
     transform: translateY(-2px);
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-    border-color: var(--primary-color);
+    border-color: var(--accent-yellow);
 }
 
 .btn-secondary {
@@ -642,6 +641,9 @@ body {
         justify-content: center;
         align-items: center;
         z-index: 1100;
+    }
+    .logo img {
+        height: 30px;
     }
 
     /* Animate Hamburger → X */
