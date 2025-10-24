@@ -546,12 +546,13 @@ body {
         gap: 30px;
     }
     .contact-info p {
-        max-width: 450px;
+        max-width: 370px;
         font-size: 0.88rem;
     }
 
     .info-block {
-        width: 400px;
+        width: 360px;
+        padding: 20px;
     }
 
     .info-icon {
@@ -562,7 +563,7 @@ body {
     .contact-form-container {
         padding: 20px;
         margin: 0 8px;
-        max-width: 400px;
+        max-width: 370px;
     }
     
     .contact-form-container h2 {
