@@ -1,0 +1,769 @@
+/* Root Variables */
+:root {
+    --primary-color: #87CEEB;
+    --secondary-red: #DC143C;
+    --secondary-white: #FFFFFF;
+    --accent-yellow: #FFD700;
+    --text-dark: #333333;
+    --text-light: #666666;
+    --bg-light: #F5F5F5;
+}
+
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: var(--text-dark);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Navigation */
+.navbar {
+    background-color: var(--primary-color);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.logo img {
+    height: 50px;
+    width: auto;
+    display: block;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--text-dark);
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: var(--accent-yellow);
+}
+
+/* Hero Section */
+.hero-small {
+    position: relative;
+    height: 250px;
+    background-image: url('https://images.unsplash.com/photo-1507692049790-de58290a4334?w=1200&h=400&fit=crop');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(135, 206, 235, 0.85), rgba(220, 20, 60, 0.7));
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    color: var(--secondary-white);
+    max-width: 800px;
+    padding: 0 20px;
+}
+
+.hero-content h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    color: var(--accent-yellow);
+}
+
+.hero-content p {
+    font-size: 1rem;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+}
+
+/* Introduction Section */
+.prophetic-intro {
+    padding: 30px 0;
+    background-color: var(--secondary-white);
+}
+
+.intro-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+}
+
+.intro-text h2 {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 1.1rem;
+}
+
+.intro-text p {
+    font-size: 1rem;
+    color: var(--text-light);
+    margin-bottom: 1.2rem;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+.scripture-highlight {
+    background: linear-gradient(135deg, var(--primary-color), #6BB6D6);
+    color: var(--secondary-white);
+    padding: 15px;
+    border-radius: 10px;
+    font-style: italic;
+    font-size: 1rem !important;
+    margin-top: 1rem !important;
+    text-align: center;
+}
+
+.scripture-highlight span {
+    display: block;
+    margin-top: 10px;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.intro-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+/* Appointment Schedule Section */
+.appointment-schedule {
+    padding: 20px 0;
+    background-color: var(--bg-light);
+}
+
+.appointment-schedule h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.section-subtitle {
+    text-align: center;
+    color: var(--text-light);
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+}
+
+.schedule-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-bottom: 1rem;
+}
+
+.schedule-card {
+    background-color: var(--secondary-white);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    position: relative;
+    border-top: 5px solid var(--primary-color);
+}
+
+.day-badge {
+    position: absolute;
+    top: -15px;
+    right: 30px;
+    background-color: var(--accent-yellow);
+    color: var(--text-dark);
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.schedule-icon {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.schedule-card h3 {
+    font-size: 1.5rem;
+    color: var(--secondary-red);
+    text-align: center;
+}
+
+.schedule-card  p {
+    color: var(--text-light);
+    margin-bottom: 1rem;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.session-flow,
+.session-benefits {
+    background-color: var(--bg-light);
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 1.5rem;
+}
+
+.session-flow h4,
+.session-benefits h4 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    line-height: 1;
+}
+
+.session-flow ul,
+.session-benefits ul {
+    list-style: none;
+}
+
+.session-flow li {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 10px;
+    color: var(--text-dark);
+    line-height: 1.2;
+}
+
+.step-number {
+    background-color: var(--primary-color);
+    color: var(--secondary-white);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.85rem;
+    font-weight: bold;
+    margin-right: 12px;
+    flex-shrink: 0;
+}
+
+.session-benefits li {
+    color: var(--text-dark);
+    margin-bottom: 8px;
+    padding-left: 5px;
+}
+
+/* Booking Information */
+.booking-info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-top: 1rem;
+}
+
+.info-card {
+    background-color: var(--secondary-white);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+}
+
+.highlight-card {
+    border-left: 5px solid var(--accent-yellow);
+}
+
+.info-card h3 {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.info-card p {
+    color: var(--text-light);
+    line-height: 1.5;
+    margin-bottom: 0.8rem;
+    font-size: 1rem;
+}
+
+.contact-number {
+    font-size: 1.1rem;
+    margin-top: 0.5rem;
+}
+
+.contact-number a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.contact-number a:hover {
+    color: var(--primary-color);
+}
+
+.emphasis-text {
+    color: var(--accent-yellow) !important;
+    font-weight: 600;
+    font-style: italic;
+    margin-top: 1rem;
+}
+
+/* Prophetic Offering Section */
+.prophetic-offering {
+    padding: 30px 0;
+    background-color: var(--secondary-white);
+}
+
+.prophetic-offering h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.offering-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.offering-definition h3,
+.biblical-examples h3 {
+    font-size: 1.5rem;
+    color: var(--secondary-red);
+    margin-bottom: 10px;
+}
+
+.offering-definition > p,
+.biblical-examples > p {
+    font-size: 1rem;
+    color: var(--text-light);
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+.offering-points {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 1rem;
+}
+
+.point-card {
+    background-color: var(--bg-light);
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    align-items: flex-start;
+    gap: 5px;
+}
+
+.point-icon {
+    font-size: 2rem;
+    flex-shrink: 0;
+}
+
+.point-card h4 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+
+.point-card p {
+    color: var(--text-light);
+    line-height: 1.5;
+    font-size: 1rem;
+}
+
+.scripture-box {
+    background: linear-gradient(135deg, var(--primary-color), #6BB6D6);
+    color: var(--secondary-white);
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.scripture-text {
+    font-size: 1rem;
+    font-style: italic;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+.scripture-ref {
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.testimony-box {
+    background-color: var(--bg-light);
+    padding: 10px;
+    border-radius: 10px;
+    border-left: 4px solid var(--accent-yellow);
+    margin-bottom: 1rem;
+}
+
+.testimony-box h4 {
+    color: var(--accent-yellow);
+    font-size: 1.2rem;
+}
+
+.testimony-box p {
+    color: var(--text-dark);
+    line-height: 1.5;
+    font-size: 1rem;
+}
+
+.offering-purpose {
+    background-color: var(--secondary-white);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.offering-purpose h4 {
+    color: var(--primary-color);
+    font-size: 1.3rem;
+}
+
+.offering-purpose p {
+    color: var(--text-dark);
+}
+
+.offering-purpose ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.offering-purpose li {
+    color: var(--text-light);
+    padding: 3px 0;
+    padding-left: 25px;
+    position: relative;
+    font-size: 1rem;
+}
+
+.offering-purpose li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+/* Footer */
+.footer {
+    background-color: var(--primary-color);
+    color: var(--secondary-red);
+    padding: 30px 0 20px;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.footer-section h3 {
+    color: var(--secondary-red);
+    margin-bottom: 1.5rem;
+    font-size: 1.3rem;
+}
+
+.footer-section p,
+.footer-section ul {
+    color: black;
+    line-height: 1.8;
+    width: 350px;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section li {
+    margin-bottom: 0.5rem;
+    width: 400px;
+}
+
+.footer-section a {
+    color: var(--secondary-white);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+    color: var(--accent-yellow);
+}
+
+.footer-link {
+    color: var(--accent-yellow);
+    text-decoration: none;
+    transition: color 0.3s ease;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.footer-link:hover {
+    color: var(--primary-color);
+}
+
+.social-links {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.social-icon {
+    color: var(--secondary-white);
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(135, 206, 235, 0.2);
+    border-radius: 50%;
+}
+
+.social-icon:hover {
+    color: var(--accent-yellow);
+    background-color: rgba(135, 206, 235, 0.4);
+    transform: translateY(-3px);
+}
+
+.social-icon svg {
+    width: 20px;
+    height: 20px;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid black;
+    color: black;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 0;
+}
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background: var(--accent-yellow);
+    margin: 3px 0;
+    transition: 0.3s;
+    border-radius: 3px;
+}
+/* ========== Responsive Navigation ========== */
+@media (max-width: 768px) {
+    .nav-links {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        height: 50vh;
+        width: 70%;
+        max-width: 280px;
+        background-color: var(--primary-color);
+        flex-direction: column;
+        align-items: start;
+        padding: 40px 20px;
+        gap: 0.2rem;
+        transition: right 0.4s ease-in-out;
+        box-shadow: -2px 0 10px rgba(0,0,0,0.2);
+    }
+
+    .nav-links.active {
+        right: 0;
+    }
+    .nav-links li a {
+        width: 100%;
+    }
+
+    .nav-links li {
+        width: 100%;
+        border-bottom: 1px solid var(--secondary-white)
+    }
+
+    .nav-links li:last-child {
+        border-bottom: none; 
+    }
+
+    .nav-links a {
+        display: block;
+        width: 10%;
+        padding: 5px 5px; 
+        color: var(--secondary-white); 
+    }
+
+    .hamburger {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 1100;
+    }
+    .logo img {
+        height: 30px;
+    }
+
+    /* Animate Hamburger → X */
+    .hamburger.active span:nth-child(1) {
+        transform: rotate(45deg) translate(6px, 6px);
+    }
+    .hamburger.active span:nth-child(2) {
+        opacity: 0;
+    }
+    .hamburger.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(6px, -6px);
+    }
+
+    /* Optional: prevent background scroll when menu is open */
+    body.menu-open {
+        overflow: hidden;
+    }
+
+    .hero-small {
+        height: 250px;
+    }
+
+    .hero-content h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero-content p {
+        font-size: 0.88rem;
+    }
+
+    .intro-content {
+        grid-template-columns: 1fr;
+    }
+
+    .intro-text h2 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+    .intro-text p {
+        font-size: 0.88rem;
+    }
+
+    .intro-image {
+        order: 1;
+    }
+
+    .appointment-schedule h2,
+    .prophetic-offering h2,
+    .schedule-card h3,
+    .booking-info h3,
+    .offering-content h3,
+    .point-icon {
+        font-size: 1.5rem;
+    }
+    .appointment-schedule p,
+    .schedule-cardc p,
+    .schedule-card li,
+    .offering-content p,
+    .offering-points h4,
+    .offering-points p{
+        font-size: 0.88rem;
+    }
+
+    .schedule-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .booking-info {
+        grid-template-columns: 1fr;
+    }
+
+    .offering-content {
+        grid-template-columns: 1fr;
+    }
+
+   .footer-content h3 {
+        font-size: 1rem;
+    }
+    .footer-bottom p,
+    .footer-content p,
+    .footer-content li {
+        font-size: 0.88rem;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-small {
+        height: 250px;
+    }
+
+    .hero-content h1 {
+        font-size: 1.8rem;
+    }
+
+    .prophetic-intro h2,
+    .appointment-schedule h2,
+    .prophetic-offering h2,
+    .cta-content h2 {
+        font-size: 2rem;
+    }
+
+    .schedule-card {
+        padding: 25px 20px;
+    }
+
+    .day-badge {
+        right: 20px;
+        font-size: 0.85rem;
+        padding: 6px 15px;
+    }
+
+    .info-card {
+        padding: 20px;
+    }
+
+    .offering-points {
+        gap: 15px;
+    }
+
+    .point-card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}

@@ -206,7 +206,11 @@ body {
     text-align: center;
     font-size: 2rem;
     color: var(--primary-color);
+    margin-bottom: 0.8rem;
+}
+.order-of-service p {
     margin-bottom: 1rem;
+    text-align: center;
 }
 
 .service-schedule {
@@ -600,7 +604,7 @@ body {
         position: fixed;
         top: 0;
         right: -100%;
-        height: 45vh;
+        height: 50vh;
         width: 70%;
         max-width: 280px;
         background-color: var(--primary-color);
@@ -694,7 +698,8 @@ body {
     .gallery h2 {
         font-size: 1.5rem;
     }
-    .order-of-service li {
+    .order-of-service li,
+    .order-of-service p {
         font-size: 0.88rem;
     }
     .order-of-service h2, 
