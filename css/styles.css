@@ -45,7 +45,7 @@ body {
 }
 
 .logo img {
-    height: 50px;
+    height: 40px;
     width: auto;
     display: block;
 }
@@ -71,7 +71,7 @@ body {
 /* Hero Section */
 .hero {
     position: relative;
-    height: 350px;
+    height: 300px;
     background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBzPfamm_8VMKWt-A2EuJ6WjHpZ2RvLf4ixw&s');
     background-size: cover;
     background-position: center;
@@ -182,8 +182,8 @@ body {
 }
 
 .intro-text p {
-    font-size: 1.1rem;
-    color: var(--text-dark);
+    font-size: 1rem;
+    color: var(--text-light);
     margin-bottom: 1rem;
     line-height: 1.5;
     text-align: justify;

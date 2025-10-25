@@ -45,7 +45,7 @@ body {
 }
 
 .logo img {
-    height: 50px;
+    height: 40px;
     width: auto;
     display: block;
 }
@@ -126,14 +126,14 @@ body {
 .intro-text h2 {
     font-size: 2rem;
     color: var(--primary-color);
-    margin-bottom: 1.1rem;
+    margin-bottom: 1rem;
 }
 
 .intro-text p {
     font-size: 1rem;
     color: var(--text-light);
     margin-bottom: 1.2rem;
-    line-height: 1.8;
+    line-height: 1.5;
     text-align: justify;
 }
 
@@ -146,13 +146,6 @@ body {
     font-size: 1rem !important;
     margin-top: 1rem !important;
     text-align: center;
-}
-
-.scripture-highlight span {
-    display: block;
-    margin-top: 10px;
-    font-weight: 600;
-    font-style: normal;
 }
 
 .intro-image img {
